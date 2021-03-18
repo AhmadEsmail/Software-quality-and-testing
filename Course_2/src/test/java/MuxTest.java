@@ -3,7 +3,7 @@ import static org.junit.Assert.assertFalse;
 
 import org.junit.*;
 
-public class MultiplyTest {
+public class MuxTest {
 
     MuxClass muxnum;
 
