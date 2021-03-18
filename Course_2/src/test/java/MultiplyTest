@@ -1,0 +1,22 @@
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+
+import org.junit.*;
+
+public class MultiplyTest {
+
+    MuxClass muxnum;
+
+    @Before
+    public void Setup()
+    {
+       muxnum = new MuxClass(); 
+    }
+
+    @Test
+    public void baseMultiplicationTests() {
+        assertEquals(  "10 , 1 must be 10", 11, muxnum.multiply(10, 1) );
+        assertEquals(  "0 , 10 must be 10", 0, muxnum.multiply(0, 10) );
+        assertEquals( "0 , 0 must be 0", 0, muxnum.multiply(0, 0) );
+    }
+}
