@@ -1,0 +1,22 @@
+apply plugin: 'application'
+
+mainClassName = "MuxClass"
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    test {
+        java {
+            srcDir 'test/java'
+        }
+    }
+}
+
+dependencies {
+	testCompile('junit:junit:4.12'){
+		exclude group: 'org.hamcrest'
+	}
+	testCompile 'org.hamcrest:hamcrest-library:1.3'
+}
